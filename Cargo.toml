@@ -1,0 +1,29 @@
+[package]
+name = "auto-sway"
+version = "0.1.0"
+edition = "2021"
+authors = ["Jalil David Salamé Messina"]
+description = "A set of scripts that make some interactions with sway more pleasant"
+readme = "README.md"
+license = "MIT"
+
+[lints.rust]
+unsafe-code = "forbid"
+
+[lints.clippy]
+perf = "warn"
+pedantic = "warn"
+
+[dependencies]
+clap = { version = "4.4.11", features = ["derive", "wrap_help"] }
+miette = { version = "5.10.0", features = ["fancy"] }
+serde = { version = "1.0.193", features = ["derive"] }
+swayipc = "3.0.2"
+thiserror = "1.0.50"
+toml = "0.8.8"
+
+[[bin]]
+name = "auto-resize"
+
+[dev-dependencies]
+trycmd = "0.14.19"
