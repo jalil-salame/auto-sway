@@ -22,8 +22,11 @@ swayipc = "3.0.2"
 thiserror = "1.0.50"
 toml = "0.8.8"
 
+[dev-dependencies]
+trycmd = "0.14.19"
+
 [[bin]]
 name = "auto-resize"
 
-[dev-dependencies]
-trycmd = "0.14.19"
+[[bin]]
+name = "outputctl"
